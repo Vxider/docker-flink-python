@@ -140,6 +140,3 @@ RUN apk add --update --no-cache \
     rm -r /root/.cache && \
     rm -rf /src && \
     apk del .build-dependencies
-
-RUN apk add --no-cache snappy g++ snappy-dev gfortran cmake make && \
-    pip install --no-cache-dir --ignore-installed lightgbm==2.0.4 python-snappy oss2
